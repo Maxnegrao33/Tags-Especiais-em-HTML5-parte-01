@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta author="Maciel Oliveira" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recursos Especiais no HTML</title>
+    <style>
+      tr,
+      td,
+      table {
+        margin: 10px;
+        padding: 10px;
+      }
+
+      kbd {
+        border: solid 2px black;
+        font-style: normal;
+        color: red;
+        margin: 10px;
+      }
+
+      pre {
+        background-color: #f2f2f2;
+      }
+
+      pre code {
+        color: red;
+      }
+
+      code {
+        background-color: #f2f2f2;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="5">
+      <tr>
+        <td>
+          <h1>Datalist</h1>
+          <!--Sugestão de preenchimento, busca sugerida-->
+          <input list="browsers" type="search" name="search" />
+          <datalist id="browsers">
+            <!--Combo Box, usado para pequenas listas-->
+            <option value="">Selecione um Navegador</option>
+            <option value="chrome">Google Chrome</option>
+            <option value="firefox">Mozilla Firefox</option>
+            <option value="edge">Microsoft Edge</option>
+            <option value="safari">Safari</option>
+            <option value="opera">Opera</option>
+            <br />
+            <br />
+          </datalist>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <h1>Code, Kbd e Pre</h1>
+          <!--Colocando link (instruções) de teclado-->
+          <p>
+            Para copiar a informação, pressione <kbd>Control</kbd>
+            <kbd>+ C</kbd>
+          </p>
+          <p>
+            Para trocar um fundo de elemento, utilize comando
+            <code>background-color</code>
+          </p>
+          <p>Comando completo para alterar a cor de fundo</p>
+          <!--Exemplificando a tag pre, que já traz a possibilidade do CSS-->
+          <pre>
+            <code>
+              code {
+                background-color: #f2f2f2;
+                color: red;
+                <!--As fontes usadas são todas caracteres "monospace"-->
+              }
+            </code>
+          </pre>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <h1>Details e Summary</h1>
+          <p>Trazer o botoão "Collapse"</p>
+          <details>
+            <!--Esses comandos são usados juntos na maoria das vezes-->
+            <!--Traz um texto definido e uma resposta-->
+            <summary>Como mudar a cor de fundo de um elemento HTML5?</summary>
+            <p>
+              Para executar esta ação, utilize o comando background-color no CSS
+            </p>
+            <!--Era uma função nativa do javaScript, que está no HTML5-->
+          </details>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
